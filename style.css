@@ -1,0 +1,68 @@
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    'header header header'
+    'nav nav nav'
+    'article article figure'
+    'footer footer footer';
+    margin: auto auto;
+    width: 70%;
+}
+
+header{
+    grid-area: header;
+}
+
+header h1{
+    color: #008767;
+}
+
+nav{
+    grid-area: nav;
+    background-color: #008767;
+    padding: 20px 20px 20px 40px;
+}
+
+nav a{
+    color: #70d2a4;
+    text-decoration: none;
+}
+
+article{
+    grid-area: article;
+}
+
+#ford{
+    display: ;
+}
+
+#benz, #ford{
+    border: solid 1px black;
+    width: 50%;
+}
+
+#benz h2, #ford h2{
+    color: #008767;
+    
+}
+
+#benz img, #ford img{
+    border: solid 1px black;
+    padding: 5px;
+    width: 50%;
+}
+
+figure{
+    grid-area: figure;
+}
+
+figure img{
+    width: 40%;
+}
+
+footer{
+    grid-area: footer;
+    color: #008767;
+    text-align: center;
+}
