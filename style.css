@@ -4,7 +4,7 @@ main{
     grid-template-areas:
     'header header header'
     'nav nav nav'
-    'article article figure'
+    'aside aside figure'
     'footer footer footer';
     margin: auto auto;
     width: 70%;
@@ -29,18 +29,15 @@ nav a{
     text-decoration: none;
 }
 
-article{
-    grid-area: article;
+aside{
+    grid-area: aside;
 }
 
-#ford{
-    display: ;
-}
-
-#benz, #ford{
+aside#benz, aside#ford{
     border: solid 1px black;
     width: 50%;
 }
+
 
 #benz h2, #ford h2{
     color: #008767;
@@ -55,10 +52,11 @@ article{
 
 figure{
     grid-area: figure;
+    margin: 0px; /* OwO */
 }
 
 figure img{
-    width: 40%;
+  width: 100%;
 }
 
 footer{
